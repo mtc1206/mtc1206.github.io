@@ -67,3 +67,74 @@
   </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dienstausweis Generator</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f6f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #0057a0;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #0057a0;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #003e75;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dienstausweis erstellen</h1>
+    <form id="ausweisForm">
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Dienstnummer" required>
+      <input type="text" placeholder="Abteilung" required>
+      <input type="text" placeholder="Rang" required>
+      <button type="submit">Ausweis speichern</button>
+    </form>
+  </div>
+</body>
+</html>
